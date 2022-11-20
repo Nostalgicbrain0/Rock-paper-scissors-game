@@ -1,0 +1,9 @@
+import random
+def get_choice():
+    player_choice = input("Enter your choice:- ")
+    options = ["rock","paper", "scissors"]
+    computer_choice = random.choice(options)
+    choices = {"player" : player_choice, "Computer": computer_choice}
+    return choices
+choices = get_choice()
+print(choices)
